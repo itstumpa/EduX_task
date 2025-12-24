@@ -1,1 +1,24 @@
 
+.menu a.active {
+      background-color: #5754E8;
+      border-radius: 5px;
+      padding: 8px 12px;
+      font-weight: bold;
+      color:white;
+      
+      
+}
+.menu a:hover{
+      background-color: #463fcf;
+      padding: 8px 12px;
+}
+
+body {
+      scroll-behavior: smooth;
+}
+html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
