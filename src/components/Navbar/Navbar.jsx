@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router";
+import { useEffect, useState } from "react";
 import "../../App.css";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
     };
   }, [isHome]);
 
-  const navbarClasses = `navbar px-4 md:px-8 lg:px-20 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+  const navbarClasses = `navbar px-4 md:px-8 xl:px-42 lg:px-32 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
     isHome
       ? scrolled
         ? 'bg-slate-900/80 backdrop-blur-lg text-white shadow-md'
@@ -31,8 +31,7 @@ const Navbar = () => {
 
   return (
     <div className={navbarClasses}>
-<div className=" w-10/12 mx-auto flex items-center justify-between px-4 md:px-6">
-        
+      
       {/* Navbar Start - Logo and Mobile Menu */}
       <div className="navbar-start">
         {/* Mobile Dropdown */}
@@ -161,7 +160,6 @@ const Navbar = () => {
           Login
         </NavLink>
       </div>
-    </div>
     </div>
   );
 };
