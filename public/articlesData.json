@@ -1,0 +1,106 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "10 Essential Tips for Learning Web Development in 2024",
+      "slug": "10-essential-tips-web-development-2024",
+      "excerpt": "Discover the most effective strategies to accelerate your web development journey and stay ahead in the rapidly evolving tech landscape.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
+      "category": "Development",
+      "author": {
+        "name": "John Doe",
+        "avatar": "https://i.pravatar.cc/150?img=13",
+        "role": "Senior Developer"
+      },
+      "publishedDate": "2024-01-15",
+      "readTime": "5 min read",
+      "tags": ["Web Development", "Career", "Tips"]
+    },
+    {
+      "id": 2,
+      "title": "The Future of AI in Education: What You Need to Know",
+      "slug": "future-ai-education",
+      "excerpt": "Explore how artificial intelligence is revolutionizing the way we learn and teach, creating personalized learning experiences.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+      "category": "Technology",
+      "author": {
+        "name": "Sarah Johnson",
+        "avatar": "https://i.pravatar.cc/150?img=5",
+        "role": "AI Researcher"
+      },
+      "publishedDate": "2024-01-12",
+      "readTime": "7 min read",
+      "tags": ["AI", "EdTech", "Future"]
+    },
+    {
+      "id": 3,
+      "title": "How to Build a Successful Career in UX/UI Design",
+      "slug": "career-ux-ui-design",
+      "excerpt": "Learn the essential skills, tools, and mindset needed to thrive as a UX/UI designer in today's competitive market.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+      "category": "Design",
+      "author": {
+        "name": "Mike Chen",
+        "avatar": "https://i.pravatar.cc/150?img=15",
+        "role": "UX Designer"
+      },
+      "publishedDate": "2024-01-10",
+      "readTime": "6 min read",
+      "tags": ["UX/UI", "Career", "Design"]
+    },
+    {
+      "id": 4,
+      "title": "Mastering Python: A Beginner's Complete Guide",
+      "slug": "mastering-python-beginners-guide",
+      "excerpt": "Start your Python programming journey with this comprehensive guide covering fundamentals to advanced concepts.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+      "category": "Programming",
+      "author": {
+        "name": "Emily Davis",
+        "avatar": "https://i.pravatar.cc/150?img=9",
+        "role": "Python Expert"
+      },
+      "publishedDate": "2024-01-08",
+      "readTime": "10 min read",
+      "tags": ["Python", "Programming", "Tutorial"]
+    },
+    {
+      "id": 5,
+      "title": "Digital Marketing Trends You Can't Ignore This Year",
+      "slug": "digital-marketing-trends-2024",
+      "excerpt": "Stay ahead of the curve with these emerging digital marketing trends that are reshaping the industry.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+      "category": "Marketing",
+      "author": {
+        "name": "Alex Turner",
+        "avatar": "https://i.pravatar.cc/150?img=8",
+        "role": "Marketing Strategist"
+      },
+      "publishedDate": "2024-01-05",
+      "readTime": "8 min read",
+      "tags": ["Marketing", "Trends", "Digital"]
+    },
+    {
+      "id": 6,
+      "title": "The Power of Online Learning: Success Stories",
+      "slug": "power-online-learning-success-stories",
+      "excerpt": "Real stories from students who transformed their careers through online education and continuous learning.",
+      "content": "Full article content here...",
+      "featuredImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+      "category": "Education",
+      "author": {
+        "name": "Rachel Green",
+        "avatar": "https://i.pravatar.cc/150?img=1",
+        "role": "Education Consultant"
+      },
+      "publishedDate": "2024-01-03",
+      "readTime": "5 min read",
+      "tags": ["Online Learning", "Success", "Inspiration"]
+    }
+  ]
+}

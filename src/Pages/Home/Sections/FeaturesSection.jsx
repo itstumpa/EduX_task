@@ -18,12 +18,8 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            <StarIcon className="h-4 w-4" />
-            Featured Courses
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Start Learning Today
+           Featured Courses
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
             Explore our hand-picked selection of top-rated courses taught by industry experts
@@ -143,7 +139,6 @@ const FeaturesSection = () => {
           <Link to="/all-courses">
             <button className="btn btn-outline btn-primary btn-lg gap-2 group">
               Explore All Courses
-              <ArrowBigRight className='w-5 h-5 group-hover:translate-x-1 transition-transform'/>
             </button>
           </Link>
         </div>

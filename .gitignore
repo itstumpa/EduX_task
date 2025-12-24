@@ -28,3 +28,4 @@ firebase/
 .env
 .env.local
 .env.* 
+.vercel
