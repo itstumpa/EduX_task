@@ -25,19 +25,6 @@ const About = () => {
               Whether you're looking to advance your career, learn a new skill, or explore a hobby, we provide 
               the courses and resources you need to succeed.
             </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">What We Offer</h2>
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Our platform features hundreds of courses across multiple categories including Development, Design, 
-              Business, Marketing, and more. Each course is taught by expert instructors with real-world experience, 
-              ensuring you get practical, hands-on knowledge you can apply immediately.
-            </p>
-
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">Our Mission</h2>
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              We believe that education should be accessible, affordable, and effective. Our mission is to provide 
-              high-quality learning experiences that help students achieve their goals and unlock their full potential.
-            </p>
           </div>
 
           {/* Stats */}
@@ -61,10 +48,7 @@ const About = () => {
           </div>
 
           {/* button*/}
-          <div className="text-center mt-16">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
-              Ready to Start Learning?
-            </h3>
+          <div className="text-center mt-12">
             <Link to="/all-courses">
               <button className="btn primary-btn btn-lg">
                 Explore Courses
