@@ -22,3 +22,16 @@ html, body {
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.primary-btn {
+      background-color: #5754E8;
+      border-radius: 5px;
+      font-weight: bold;
+      color:white;
+      
+      
+}
+.primary-btn:hover {
+      background-color: #463fcf;
+      
+      
+}
