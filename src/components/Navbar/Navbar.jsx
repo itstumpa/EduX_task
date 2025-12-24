@@ -76,9 +76,7 @@ const navbarClasses = `navbar px-4 md:px-8 lg:px-20 fixed top-0 left-0 right-0 z
             <li>
               <NavLink to="/login">Login</NavLink>
             </li>
-             <li>
-            <NavLink to="/register">Register</NavLink>
-          </li>
+             
           </ul>
         </div>
 
@@ -109,9 +107,7 @@ const navbarClasses = `navbar px-4 md:px-8 lg:px-20 fixed top-0 left-0 right-0 z
           <li>
             <NavLink to="/login">Login</NavLink>
           </li>
-          <li>
-            <NavLink to="/register">Register</NavLink>
-          </li>
+          
         </ul>
       </div>
     </div>
