@@ -1,5 +1,5 @@
-import { NavLink, useLocation } from "react-router";
 import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router";
 import "../../App.css";
 
 const Navbar = () => {
@@ -31,7 +31,8 @@ const Navbar = () => {
 
   return (
     <div className={navbarClasses}>
-      
+<div className=" w-10/12 mx-auto flex items-center justify-between px-4 md:px-6">
+        
       {/* Navbar Start - Logo and Mobile Menu */}
       <div className="navbar-start">
         {/* Mobile Dropdown */}
@@ -160,6 +161,7 @@ const Navbar = () => {
           Login
         </NavLink>
       </div>
+    </div>
     </div>
   );
 };

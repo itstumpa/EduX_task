@@ -5,6 +5,8 @@ import Error from "../Pages/Error/ErrorPage404.jsx";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login.jsx";
 import Register from "../Pages/Register/Register.jsx";
+import AllCourses from "../Pages/AllCourses/AllCourses.jsx";
+import CourseDetails from "../Pages/CourseDetails/CourseDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/all-courses",
+        element: <AllCourses />,
+      },
+      {
+        path: "/course/:id",
+        element: <CourseDetails />,
       },
     ],
   },

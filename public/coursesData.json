@@ -1,0 +1,156 @@
+{
+  "featuredCourses": [
+    {
+      "id": 1,
+      "title": "Complete Web Development Bootcamp 2024",
+      "category": "Development",
+      "instructor": {
+        "name": "Dr. Angela Yu",
+        "avatar": "https://i.pravatar.cc/150?img=1"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+      "duration": "52 hours",
+      "students": 12453,
+      "rating": 4.8,
+      "reviews": 3842,
+      "price": 89.99,
+      "originalPrice": 199.99,
+      "level": "Beginner",
+      "isBestseller": true,
+      "description": "Master full-stack web development from scratch"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Design Masterclass with Figma",
+      "category": "Art & Design",
+      "instructor": {
+        "name": "Sarah Johnson",
+        "avatar": "https://i.pravatar.cc/150?img=5"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80",
+      "duration": "38 hours",
+      "students": 8924,
+      "rating": 4.9,
+      "reviews": 2156,
+      "price": 0,
+      "originalPrice": null,
+      "level": "Intermediate",
+      "isBestseller": false,
+      "description": "Learn professional UI/UX design with real projects"
+    },
+    {
+      "id": 3,
+      "title": "Python for Data Science and Machine Learning",
+      "category": "Data Science",
+      "instructor": {
+        "name": "Jose Portilla",
+        "avatar": "https://i.pravatar.cc/150?img=12"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+      "duration": "44 hours",
+      "students": 15678,
+      "rating": 4.7,
+      "reviews": 4521,
+      "price": 79.99,
+      "originalPrice": 149.99,
+      "level": "All Levels",
+      "isBestseller": true,
+      "description": "Complete Python bootcamp for data science"
+    },
+    {
+      "id": 4,
+      "title": "Digital Marketing Mastery 2024",
+      "category": "Marketing",
+      "instructor": {
+        "name": "Neil Patel",
+        "avatar": "https://i.pravatar.cc/150?img=8"
+      },
+      "thumbnail": "https://i.pinimg.com/736x/a2/c2/ad/a2c2adf0ce6b41baf4f758103d4458cc.jpg",
+      "duration": "28 hours",
+      "students": 6789,
+      "rating": 4.6,
+      "reviews": 1834,
+      "price": 69.99,
+      "originalPrice": 129.99,
+      "level": "Beginner",
+      "isBestseller": false,
+      "description": "Master SEO, social media, and content marketing"
+    },
+    {
+      "id": 5,
+      "title": "Photography for Beginners",
+      "category": "Photography",
+      "instructor": {
+        "name": "Chris Parker",
+        "avatar": "https://i.pravatar.cc/150?img=14"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80",
+      "duration": "22 hours",
+      "students": 4532,
+      "rating": 4.8,
+      "reviews": 982,
+      "price": 0,
+      "originalPrice": null,
+      "level": "Beginner",
+      "isBestseller": false,
+      "description": "Learn professional photography from basics to advanced"
+    },
+    {
+      "id": 6,
+      "title": "Business Strategy and Leadership",
+      "category": "Business",
+      "instructor": {
+        "name": "Michael Chen",
+        "avatar": "https://i.pravatar.cc/150?img=15"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80",
+      "duration": "35 hours",
+      "students": 9876,
+      "rating": 4.9,
+      "reviews": 2341,
+      "price": 94.99,
+      "originalPrice": 179.99,
+      "level": "Advanced",
+      "isBestseller": true,
+      "description": "Develop strategic thinking and leadership skills"
+    },
+    {
+      "id": 7,
+      "title": "Complete Guitar Course for Beginners",
+      "category": "Music",
+      "instructor": {
+        "name": "Tom Anderson",
+        "avatar": "https://i.pravatar.cc/150?img=11"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80",
+      "duration": "18 hours",
+      "students": 3421,
+      "rating": 4.7,
+      "reviews": 756,
+      "price": 49.99,
+      "originalPrice": 99.99,
+      "level": "Beginner",
+      "isBestseller": false,
+      "description": "Learn guitar from zero to playing your favorite songs"
+    },
+    {
+      "id": 8,
+      "title": "Yoga & Meditation for Stress Relief",
+      "category": "Health & Fitness",
+      "instructor": {
+        "name": "Emma Williams",
+        "avatar": "https://i.pravatar.cc/150?img=9"
+      },
+      "thumbnail": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "duration": "15 hours",
+      "students": 5643,
+      "rating": 4.9,
+      "reviews": 1245,
+      "price": 0,
+      "originalPrice": null,
+      "level": "All Levels",
+      "isBestseller": false,
+      "description": "Find inner peace through yoga and meditation practices"
+    }
+  ]
+}

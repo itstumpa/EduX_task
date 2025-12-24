@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import coursesData from '../../../../public/coursesData.json';
-import { ArrowBigRight, ContactIcon, StarIcon, TimerIcon } from 'lucide-react';
+import coursesData from '../../../public/coursesData.json';
+import { ContactIcon, StarIcon, TimerIcon } from 'lucide-react';
 import { FcNext } from 'react-icons/fc';
 
-const FeaturesSection = () => {
+const AllCourses = () => {
   const { featuredCourses } = coursesData;
 
   const formatStudentCount = (count) => {
@@ -14,71 +14,71 @@ const FeaturesSection = () => {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-16 pt-24 min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             <StarIcon className="h-4 w-4" />
-            Featured Courses
+            All Courses
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Start Learning Today
-          </h2>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Explore All Courses
+          </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Explore our hand-picked selection of top-rated courses taught by industry experts
+            Browse through our complete collection of {featuredCourses.length} courses taught by industry experts
           </p>
         </div>
 
-        {/* grid start*/}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {featuredCourses.slice(0, 3).map((course) => (
+        {/* grid started */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredCourses.map((course) => (
             <div 
               key={course.id} 
               className="card bg-white shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 group hover:-translate-y-2"
             >
-              {/*thumbnail */}
+              {/* thumbnail */}
               <figure className="relative overflow-hidden h-48">
                 <img
                   src={course.thumbnail}
                   alt={course.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                {/* bestseler */}
+                {/* Bestseller Badge */}
                 {course.isBestseller && (
                   <div className="absolute top-3 left-3 bg-amber-400 text-amber-900 px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg">
                     <StarIcon className="h-3 w-3 text-red-600" />
                     Bestseller
                   </div>
                 )}
-                {/* category */}
+                {/* Category Badge */}
                 <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-semibold text-slate-700">
                   {course.category}
                 </div>
               </figure>
 
               <div className="card-body p-5">
-                {/* title */}
-                <h3 className="card-title text-base font-bold text-slate-800 line-clamp-1 leading-snug group-hover:text-indigo-600 transition-colors">
+                {/* Course Title */}
+                <h3 className="card-title text-base font-bold text-slate-800 line-clamp-2 leading-snug group-hover:text-indigo-600 transition-colors">
                   {course.title}
                 </h3>
 
-                {/* description */}
+                {/* Description */}
                 <p className="text-sm text-slate-600 line-clamp-1">
                   {course.description}
                 </p>
 
                 {/* Instructor */}
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-2">
                   <div className="avatar">
-                    <div className="w-8 h-8 rounded-full ring ring-slate-200 ring-offset-1">
+                    <div className="w-8 h-8 rounded-full">
                       <img src={course.instructor.avatar} alt={course.instructor.name} />
                     </div>
                   </div>
                   <span className="text-sm text-slate-700 font-medium">{course.instructor.name}</span>
                 </div>
 
-                {/* rting */}
+                {/* Rating */}
                 <div className="flex items-center gap-2 mb-1">
                   <div className="flex items-center gap-1">
                     <span className="text-amber-500 font-bold text-sm">{course.rating}</span>
@@ -100,19 +100,19 @@ const FeaturesSection = () => {
                   <span className="text-xs text-slate-500">({course.reviews.toLocaleString()})</span>
                 </div>
 
-                {/*Info */}
-                <div className="flex items-center justify-between text-xs text-slate-600 mb-2 pb-4 border-b border-slate-100">
+                {/* info */}
+                <div className="flex items-center justify-between text-xs text-slate-600 mb-4 pb-4 border-b border-slate-100">
                   <div className="flex items-center gap-1">
                     <TimerIcon className='w-4 h-4'/>
                     <span>{course.duration}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <ContactIcon className='w-4 h-4'/>
-                    <span>{formatStudentCount(course.students)} students</span>
+                    <span>{formatStudentCount(course.students)}</span>
                   </div>
                 </div>
 
-                {/* Price */}
+                {/* Price*/}
                 <div className="flex items-center justify-between">
                   <div>
                     {course.price === 0 ? (
@@ -128,7 +128,7 @@ const FeaturesSection = () => {
                   </div>
                   <Link to={`/course/${course.id}`}>
                     <button className="btn btn-primary btn-sm gap-1 group/btn">
-                      View More
+                      View
                       <FcNext />
                     </button>
                   </Link>
@@ -137,19 +137,9 @@ const FeaturesSection = () => {
             </div>
           ))}
         </div>
-
-        {/*  Button */}
-        <div className="text-center mt-12">
-          <Link to="/all-courses">
-            <button className="btn btn-outline btn-primary btn-lg gap-2 group">
-              Explore All Courses
-              <ArrowBigRight className='w-5 h-5 group-hover:translate-x-1 transition-transform'/>
-            </button>
-          </Link>
-        </div>
       </div>
     </section>
   );
 };
 
-export default FeaturesSection;
+export default AllCourses;
