@@ -1,8 +1,11 @@
-import { ArrowDownRight, BookA, BookAIcon, BriefcaseBusiness } from 'lucide-react';
+import { ArrowDownRight, BookA, BookAIcon, BriefcaseBusiness, Computer, Guitar } from 'lucide-react';
 import { BiRightArrow } from 'react-icons/bi';
+import { BsMarkerTip } from 'react-icons/bs';
 import { CgDesignmodo } from 'react-icons/cg';
 import { DiHtml5 } from 'react-icons/di';
+import { FaBusinessTime } from 'react-icons/fa';
 import { FcNext } from 'react-icons/fc';
+import { MdDesignServices } from 'react-icons/md';
 import { Link } from 'react-router';
 
 const TopCategories = () => {
@@ -10,6 +13,9 @@ const TopCategories = () => {
     {
       id: 1,
       name: 'Art & Design',
+      Badge: (
+      <CgDesignmodo className="h-8 w-8" / >
+    ), 
        icon: (
         <CgDesignmodo className="h-8 w-8" / >
       ),
@@ -19,6 +25,9 @@ const TopCategories = () => {
     {
       id: 2,
       name: 'Development',
+      Badge: (
+      <DiHtml5   className="h-8 w-8" / >
+    ), 
        icon: (
         <DiHtml5 className="h-8 w-8" / >
       ),
@@ -28,6 +37,9 @@ const TopCategories = () => {
     {
       id: 3,
       name: 'Business',
+      Badge: (
+      <FaBusinessTime className="h-8 w-8" / >
+    ), 
        icon: (
         <BriefcaseBusiness className="h-8 w-8" / >
       ),
@@ -37,6 +49,9 @@ const TopCategories = () => {
     {
       id: 4,
       name: 'Marketing',
+      Badge: (
+      <BsMarkerTip className="h-8 w-8" / >
+    ), 
       icon: (
         <BookA className="h-8 w-8" / >
       ),
@@ -44,17 +59,24 @@ const TopCategories = () => {
       textColor: 'text-purple-600'
     },
     {
-      id: 4,
+      id: 5,
       name: 'Computer',
+      Badge: (
+      <Computer className="h-8 w-8" / >
+    ), 
       icon: (
         <BookA className="h-8 w-8" / >
       ),
-      courseCount: 164,
+      courseCount: 64,
       textColor: 'text-purple-600'
     },
+    
     {
-      id: 4,
-      name: 'Guiter',
+      id: 6,
+      name: 'Guitar',
+      Badge: (
+      <Guitar className="h-8 w-8" / >
+    ), 
       icon: (
         <BookA className="h-8 w-8" / >
       ),
@@ -96,6 +118,10 @@ const TopCategories = () => {
               <div className="card bg-white shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 h-full group-hover:-translate-y-2 cursor-pointer overflow-hidden">
                 <div className="card-body p-6">
 
+                  {/* Category Name */}
+                  <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors">
+                    {category.Badge}
+                  </h3>
                   {/* Category Name */}
                   <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-indigo-600 transition-colors">
                     {category.name}

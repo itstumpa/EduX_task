@@ -26,7 +26,7 @@ const HeroSection = () => {
             <div className="flex gap-4 pt-2">
               <Link to="/all-courses">
                 <button className="primary-btn px-6 py-3 text-sm sm:text-base">
-                  Explore Courses
+                  Get Started
                 </button>
               </Link>
 
