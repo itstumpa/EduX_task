@@ -21,7 +21,7 @@ const CTASection = () => {
                 Join our learning management system and unlock your potential. Whether you want to learn new skills or share your expertise, we've got you covered.
               </p>
               
-              {/* Buttons */}
+            {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
                   <span className="text-xl"><PiStudent/></span>

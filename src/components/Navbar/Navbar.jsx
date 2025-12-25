@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from "react-router";
 import { useEffect, useState } from "react";
 import "../../App.css";
+import { Search } from "lucide-react";
 
 const Navbar = () => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const Navbar = () => {
         : 'bg-slate-900 text-white'
       : 'bg-slate-900/80 backdrop-blur-lg text-white shadow-md'
   }`;
+
 
   return (
     <div className={navbarClasses}>
@@ -152,7 +154,25 @@ const Navbar = () => {
       </div>
 
       {/* Navbar End */}
-      <div className="navbar-end">
+      <div className="navbar-end flex items-center gap-2 md:gap-4 ">
+
+{/* Search Bar */}
+        <form  className="relative">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={null}
+            className="input input-sm md:input-md bg-slate-800/50 border border-slate-700 text-white placeholder-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-1 focus:ring-indigo-400 w-26 sm:w-32 md:w-36 lg:w-44 pr-8"
+          />
+          <button
+            type="submit"
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-indigo-400 transition-colors"
+          >
+           <Search className="w-4 h-4"/>
+          </button>
+        </form>
+
+
         <NavLink
           to="/login"
           className="px-4 py-2 text-sm primary-btn transition-all duration-300"
