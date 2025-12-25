@@ -1,5 +1,7 @@
 import React from 'react';
 import { BiBookContent } from 'react-icons/bi';
+import { FcManager } from 'react-icons/fc';
+import { PiStudent } from 'react-icons/pi';
 
 const CTASection = () => {
   return (
@@ -22,11 +24,11 @@ const CTASection = () => {
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
-                  <span className="text-xl">🎓</span>
+                  <span className="text-xl"><PiStudent/></span>
                   I'm a Student
                 </button>
                 <button className="bg-indigo-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-900 transition border-2 border-white/20 flex items-center justify-center gap-2">
-                  <span className="text-xl">👨‍🏫</span>
+                  <span className="text-xl"><FcManager/></span>
                   Become an Instructor
                 </button>
               </div>
